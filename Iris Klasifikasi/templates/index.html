@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form action='/predict' method="post">
+            <div class="form-group">
+                <label>Sepal Length:</label>
+                <input type="text" name="sepal_length" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Sepal Width:</label>
+                <input type="text" name="sepal_width" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Petal Length:</label>
+                <input type="text" name="petal_length" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Petal Width:</label>
+                <input type="text" name="petal_width" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Class:</label>
+                <input type="text" value="{{result}}" class="form-control" readonly>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </div>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
